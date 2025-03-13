@@ -28,7 +28,7 @@ jobs:
           sphinx-apidoc -o source/_modules ../src
           make html
       - name: Upload documentation artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: documentation-artifact
           path: docs/_build/html
