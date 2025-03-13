@@ -836,9 +836,9 @@ class LoraBaseMixin:
         you want to load multiple adapters and free some GPU memory.
 
         Args:
-            adapter_names (`List[str]`):
+            adapter_names:
                 List of adapters to send device to.
-            device (`Union[torch.device, str, int]`):
+            device:
                 Device to send the adapters to. Can be either a torch device, a str or an integer.
         """
         if not USE_PEFT_BACKEND:
